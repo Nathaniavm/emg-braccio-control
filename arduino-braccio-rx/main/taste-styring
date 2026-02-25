@@ -1,0 +1,20 @@
+/*
+  if (in.available()) {
+    String line = in.readStringUntil('\n');
+    int sep = line.indexOf(';');
+    if (sep > 0) {
+      direction = line.substring(0, sep).toInt();
+      joint     = line.substring(sep + 1).toInt();
+      // ... kjør switch og ServoMovement
+    }
+    Serial.print("dir="); Serial.print(direction);
+    Serial.print(" joint="); Serial.print(joint);
+    Serial.print(" M: ");
+    Serial.print(M1); Serial.print(",");
+    Serial.print(M2); Serial.print(",");
+    Serial.print(M3); Serial.print(",");
+    Serial.print(M4); Serial.print(",");
+    Serial.print(M5); Serial.print(",");
+    Serial.println(M6);
+  }
+  */

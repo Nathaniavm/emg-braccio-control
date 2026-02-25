@@ -1,3 +1,8 @@
+utenfor loop:
+// SoftwareSerial: RX=8, TX=9 (TX kan droppes hvis ikke vi sender tilbake)
+SoftwareSerial link(8, A5);  // (RX, TX)
+
+inni loop:
 if (link.available()) {
     String line = link.readStringUntil('\n'); // 1 hel melding
     Serial.print("MSG = ");

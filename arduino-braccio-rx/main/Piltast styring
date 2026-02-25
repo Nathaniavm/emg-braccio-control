@@ -1,0 +1,62 @@
+utenfor loop:
+// Testing
+// Stream &in = Serial;
+
+/*
+// -----------------------------------
+void handleLine(const String& line) { // STYRETEST
+  if (line.length() < 2) return;
+
+  char type = line.charAt(0);
+  int val = line.substring(1).toInt();
+
+  if (type == 'D') {
+    // D0, D1, D2
+    if (val < 0) val = 0;
+    if (val > 2) val = 2;
+    direction = val;
+  } else if (type == 'J') {
+    // J1..J6
+    if (val < 1) val = 1;
+    if (val > 6) val = 6;
+    joint = val;
+  }
+}
+
+void readInputNonBlocking() { // STYRETEST
+  while (Serial.available()) {
+    String line = Serial.readStringUntil('\n');
+    line.trim();
+    handleLine(line);
+  }
+}
+// -----------------------------------------
+*/
+
+inni loop:
+
+
+/*
+  if (in.available()) {
+    String line = in.readStringUntil('\n');
+    int sep = line.indexOf(';');
+    if (sep > 0) {
+      direction = line.substring(0, sep).toInt();
+      joint     = line.substring(sep + 1).toInt();
+      // ... kjør switch og ServoMovement
+    }
+    Serial.print("dir="); Serial.print(direction);
+    Serial.print(" joint="); Serial.print(joint);
+    Serial.print(" M: ");
+    Serial.print(M1); Serial.print(",");
+    Serial.print(M2); Serial.print(",");
+    Serial.print(M3); Serial.print(",");
+    Serial.print(M4); Serial.print(",");
+    Serial.print(M5); Serial.print(",");
+    Serial.println(M6);
+  }
+  */
+  
+  //readInputNonBlocking(); // STYRETEST
+  
+  //if (direction != 0) { // STYRETEST

@@ -1,0 +1,16 @@
+if (link.available()) {
+    String line = link.readStringUntil('\n'); // 1 hel melding
+    Serial.print("MSG = ");
+    Serial.println(line);
+    int sep = line.indexOf(';'); // separere info
+    if (sep > 0) {
+      direction = line.substring(0, sep).toInt(); // Første halvdel
+      Serial.print("DIRECTION = ");
+      Serial.println(direction);
+      joint = line.substring(sep + 1).toInt(); // andre halvdel
+      Serial.print("JOINT = ");
+      Serial.println(joint);
+    } else {
+      direction = 0; // gjør ingenting
+    }
+  }
